@@ -1,0 +1,122 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body{
+    background-color: #E9EAEC ;
+}
+header > .card-container > .right > .card{
+    
+    height: 250px;
+    width: 420px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 8px;
+    perspective: 1000px;
+    background: url('/images/rupee.jpeg') ;
+    background-size: cover;
+    cursor: pointer;
+    border: .5px solid #E9EAEC;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+      -webkit-transition: none;
+         -moz-transition: none;
+              transition: none;
+  }
+  .card:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    
+      -webkit-transition: all 0.4s ease-in-out;
+         -moz-transition: all 0.4s ease-in-out;
+              transition: all 0.4s ease-in-out;
+  }
+  
+  /* Two */
+  /* .button.two {
+    background-repeat: no-repeat;
+    background-position: -120px -120px, 0 0;
+    
+    background-image: -webkit-linear-gradient(
+      top left,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );
+    background-image: -moz-linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );    
+    background-image: -o-linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );
+    background-image: linear-gradient(
+      0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%
+    );
+    
+    -moz-background-size: 250% 250%, 100% 100%;
+         background-size: 250% 250%, 100% 100%;
+    
+    -webkit-transition: background-position 0s ease;
+       -moz-transition: background-position 0s ease;       
+         -o-transition: background-position 0s ease;
+            transition: background-position 0s ease;
+  }
+   */
+.card-front{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-front > img{
+margin-left: 10%;
+margin-bottom: 5%;
+position: absolute;
+
+}
+.card-front > .master.png{
+    margin-top: 50%;
+    margin-left: 80%;
+    position: absolute;
+}
+.card-front > .card-logo{
+    margin-left: 79%;
+    margin-bottom: 54%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+}
+
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
