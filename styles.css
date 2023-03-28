@@ -2,16 +2,75 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1%;
+}
+nav > .logo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+}
+nav > .info-btn >button{
+    border-style: none;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: orangered;
+    cursor: pointer;
 }
 body{
-    background-color: #E9EAEC ;
+    background-color: #145DA0 ;
 }
+.card-container > .left > .content >.content-heading >h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: lightcoral;
+    
+}
+.card-container > .left > .content > .content-description{
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size: large;
+    color: white;
+    
+}
+.card-container > .left > .content > button{
+    padding: 5%;
+    font-size: medium;
+    color: white;
+    background-color: seagreen;
+    border-style: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 7%;
+}
+.card-container > .left > .content > button:hover{
+    background-color: lightseagreen ;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+.card-container > .left{
+    width: 30%;
+}
+header > .card-container .gandhi-icon{
+    /* background-image: url(./images/gandhi.png); */
+    margin-right: 19%;
+    margin-bottom: 20%;
+    position: absolute;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 header > .card-container > .right > .card{
     
     height: 250px;
     width: 420px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     perspective: 1000px;
     background: url('/images/rupee.jpeg') ;
     background-size: cover;
@@ -36,10 +95,11 @@ header > .card-container > .right > .card{
   .card:hover:after {
     width: 120%;
     background-color: rgba(255,255,255,0);
+    border-radius: 10px;
     
       -webkit-transition: all 0.4s ease-in-out;
-         -moz-transition: all 0.4s ease-in-out;
-              transition: all 0.4s ease-in-out;
+         -moz-transition: all 0.3s ease-in-out;
+              transition: all 0.2s ease-in-out;
   }
   
   /* Two */
@@ -119,4 +179,8 @@ position: absolute;
     -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
   }
+
+@media screen {
+    
+}
   
